@@ -182,6 +182,7 @@ a{
     color: #fff;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
     gap: 4px;
+    border: 3px solid #f3e731;
 }
 
 .main h3, .op1 h3, .op2 h3, .op3 h3{
