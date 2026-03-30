@@ -1,0 +1,337 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+    background-color: #f4f4f4;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+p{
+    font-size: 18px;
+}
+
+h1{
+    font-size: 3rem;
+}
+
+h3{
+    font-size: 30px;
+}
+
+a{
+    font-size: 18px;
+}
+
+.mas-container {
+    display: grid;
+    padding: 15px;
+    min-height: 100vh;
+    grid-template-columns: repeat(3, 1fr) 300px;
+    grid-template-areas: 
+        "header  header  header  header"
+        "hero    hero    hero    hero"
+        "op1     op2     op3     sidebar"
+        "footer  footer  footer  footer";
+}
+
+.sub-page .mas-container {
+    grid-template-columns: 1fr 300px;
+    grid-template-areas: 
+        "header  header"
+        "hero    hero"
+        "main    sidebar"
+        "footer  footer";
+}
+
+.header { 
+    grid-area: header; 
+    background-color: #283b64;
+    padding: 10px 40px; 
+    border-radius: 8px 8px 0px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+
+.hero-brand, .header-brand {
+    display: flex;
+    align-items: center;
+    gap: 15px; 
+}
+
+.hero-brand img, .header-brand img {
+    height: 80px; 
+    width: auto;
+}
+
+.header-brand h1 {
+    font-size: 2.5rem;
+    color: #f3e731;
+    white-space: nowrap;
+}
+
+.hero-brand h1{
+    font-size: 2.5rem;
+    color: #f3e731;
+    white-space: nowrap;
+}
+
+.nav { 
+    display: flex; 
+    gap: 10px;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.dropdown, .home-btn { 
+    position: relative; 
+    width: 180px; 
+    height: 45px;  
+    border: 3px solid #f3e731;
+    background-color: #283b64;
+    transition: 0.3s;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.button {
+    background-color: transparent; 
+    color: #f3e731; 
+    font-weight: bold; 
+    font-size: 18px;
+    width: 100%;
+    height: 100%;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.dropdown:hover, .home-btn:hover {
+    background-color: #f3e731;
+}
+
+.dropdown:hover .button, .home-btn:hover .button {
+    color: #283b64;
+}
+
+.content { 
+    display: none; 
+    position: absolute; 
+    top: 100%; 
+    right: -3px; 
+    background-color: #4e7d40; 
+    min-width: 180px; 
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2); 
+    z-index: 10;
+    border: 3px solid #f3e731;
+}
+
+.dropdown:hover .content { display: block; }
+
+.content a { 
+    color: #fff; 
+    padding: 10px; 
+    display: block; 
+    background-color: #4e7d40; 
+    font-weight: bold;
+}
+
+.content a:hover { background-color: #6ba43c; }
+
+.hero { grid-area: hero; position: relative; overflow: hidden; height: 400px; }
+.hero img { width: 100%; height: 100%; object-fit: cover; position: absolute; }
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+  width: 90%; 
+  
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+.hero-content h1 {
+  font-size: 4rem; 
+  margin-bottom: 10px;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  font-weight: normal;
+}
+
+.main, .op1, .op2, .op3 {
+    padding: 25px;
+    background-color: #5d2723;
+    color: #fff;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    gap: 4px;
+}
+
+.main h3, .op1 h3, .op2 h3, .op3 h3{
+    font-size: 2rem;
+}
+
+.main { grid-area: main; }
+.op1 { grid-area: op1; }
+.op2 { grid-area: op2; }
+.op3 { grid-area: op3; }
+
+.main img, .op1 img, .op2 img, .op3 img {
+    width: 60%;
+    height: auto;
+    max-height: 800px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 3px solid #f3e731;
+    
+    display: block;       
+    margin-left: auto;    
+    margin-right: auto;   
+    margin-bottom: 20px;  
+}
+
+.sidebar { grid-area: sidebar; background-color: #6ba43c; padding: 20px; color: #fff;}
+.footer  { grid-area: footer; background: #283b64; color: #fff; text-align: center; padding: 20px; border-radius: 0px 0px 8px 8px; }
+
+.sub-page .nav { 
+    display: flex; 
+    gap: 15px; 
+    align-items: center;
+    justify-content: flex-end; 
+    width: 100%;
+}
+
+.footer a{
+    color: #fff;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.sub-page1 .mas-container {
+    grid-template-columns: repeat(3, 1fr) 300px;
+    grid-template-areas: 
+        "header  header  header  header"
+        "main    main    main    sidebar" 
+        "op1     op2     op3     sidebar" 
+        "footer  footer  footer  footer";
+}
+
+
+.sub-page1 .op1 img, 
+.sub-page1 .op2 img, 
+.sub-page1 .op3 img {
+    height: 250px; 
+    object-fit: cover;
+}
+
+.sub-page .op1:hover, 
+.sub-page .op2:hover, 
+.sub-page .op3:hover {
+    box-shadow: 0 0 15px rgba(243, 231, 49, 0.6); 
+    transform: translateY(-5px);
+    transition: 0.3s ease;
+}
+
+.sidebar img {
+    width: 100%;           
+    height: auto;          
+    display: block;        
+    margin-bottom: 15px;   
+    border-radius: 8px;    
+    object-fit: cover;     
+}
+
+.sidebar .sidebar-thumb {
+    height: 180px; 
+}
+
+@media (max-width: 1024px) {
+    .mas-container, .sub-page .mas-container, .sub-page1 .mas-container {
+        grid-template-columns: 1fr 1fr; 
+        grid-template-areas: 
+            "header  header"
+            "hero    hero"
+            "main    main"
+            "op1     op2"
+            "op3     sidebar"
+            "footer  footer";
+    }
+
+    .nav {
+        gap: 5px;
+    }
+
+    .dropdown, .home-btn {
+        width: 150px; 
+    }
+}
+
+@media (max-width: 768px) {
+    .mas-container, .sub-page .mas-container, .sub-page1 .mas-container {
+        grid-template-columns: 1fr; 
+        grid-template-areas: 
+            "header"
+            "nav"
+            "hero"
+            "main"
+            "op1"
+            "op2"
+            "op3"
+            "sidebar"
+            "footer";
+        height: auto;
+    }
+
+    .header {
+        flex-direction: column; 
+        padding: 20px;
+        height: auto;
+        border-radius: 0;
+    }
+
+    .nav {
+        grid-area: nav;
+        flex-wrap: wrap; 
+        justify-content: center;
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    .dropdown, .home-btn {
+        width: 100%; 
+        margin-bottom: 5px;
+    }
+
+    .header-brand h1 {
+        font-size: 1.5rem; 
+    }
+
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .main img, .op1 img, .op2 img, .op3 img {
+        width: 100%; 
+    }
+    
+    .sidebar {
+        margin-top: 10px;
+    }
+}
