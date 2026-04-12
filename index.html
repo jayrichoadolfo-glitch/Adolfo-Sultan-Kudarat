@@ -1,91 +1,139 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel=stylesheet href="styles/styles.css">
-	<link rel="icon" type="image/jpeg" href="images/FL.jpeg">
-	<title>Sultan Kudarat</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sultan Kudarat</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
-	<div class="mas-container">
-		<div class="header">
-			<div class="header-brand">
-				<img src="images/SKOS.png" alt="pic" width="155" height="150">
-				<h1>Explore Sultan Kudarat</h1>
-			</div>
-			<div class="nav">
-				<div class="dropdown">
-					<button class="button">Must-Have</button>
-					<div class="content">
-						<a href="history.html">History & Origin</a>
-						<a href="geography.html">Geography & Climate</a>
-						<a href="people.html">People & Culture</a>
-						<a href="language.html">Local Languages</a>
-					</div>
-				</div>
-				<div class="dropdown">
-					<button class="button">Municipal Spotlights</button>
-					<div class="content">
-						<a href="isulan.html">Isulan</a>
-						<a href="tacurong.html">Tacurong City</a>
-						<a href="lebak.html">Lebak</a>
-						<a href="kalamansig.html">Kalamansig</a>
-						<a href="columbio.html">Columbio</a>
-						<a href="aquino.html">Sen. Ninoy Aquino</a>
-						<a href="esperanza.html">Esperanza</a>
-						<a href="bagumbayan.html">Bagumbayan</a>
-						<a href="palimbang.html">Palimbang</a>
-						<a href="lambayong.html">Lambayong</a>
-						<a href="lutayan.html">Lutayan</a>
-					</div>
-				</div>
-				<div class="dropdown">
-					<button class="button">Traveler's Guide</button>
-					<div class="content">
-						<a href="transportation.html">Transportation</a>
-						<a href="food.html">Signature Flavors</a>
-						<a href="map.html">Spelunker’s Map</a>
-						<a href="cultural.html">Cultural Etiquette</a>
-						<a href="contact.html">Directory & Emergency Contacts</a>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="hero">
-			<img src="images/SK.jpeg" alt="Sultan">
-			<div class="hero-content">
-				<h1>The Golden Heart of Mindanao</h1>
-				<p>Experience a land of majestic domes, rolling ridges, and the enduring spirit of the Tri-People.</p>
-			</div>
-		</div>
-		<div class="sidebar">
-			<h3>"Essentials" Trio</h3>
-			<p><strong>Heritage:</strong> Named after the legendary Sultan Muhammad Kudarat, our history is a story of courage and independence.</p>
-			<p><strong>Diversity:</strong> A harmonious "Melting Pot" where Maguindanaon, Indigenous Peoples, and Settlers live as one.</p>
-			<p><strong>Nature:</strong> From the peak of the Daguma Range to the white sands of Kalamansig, adventure is around every corner.</p>
-		</div>
-		<div class="op1">
-			<img src="images/ISU.jpeg" alt="pic">
-			<h1>Isulan</h1>
-			<h2>The Golden Capital</h2>
-			<p>Feature the architecture and the night lights.</p>
-		</div>
-		<div class="op2">
-			<img src="images/TAC.jpeg" alt="pic">
-			<h1>Tacurong</h1>
-			<h2>The Bird Sanctuary</h2>
-			<p>Mention the 20,000 birds at Baras.</p>
-		</div>
-		<div class="op3">
-			<img src="images/COL.jpeg" alt="pic">
-			<h1>Columbio</h1>
-			<h2>The Little New Zealand</h2>
-			<p> Highlight the rolling green hills.</p>
-		</div>
-		<div class="footer">
-			<p>Copyright © 2026 Provincial Government of Sultan Kudarat. All Rights Reserved.</p>
-		</div>
-	</div>
+
+    <nav class="navbar navbar-expand-lg header p-0 fixed-top">
+        <div class="container-fluid px-4 py-2 branding-wrapper">
+            
+            <div class="d-flex align-items-center justify-content-between w-100 top-mobile-row">
+                <div class="header-brand">
+                    <img src="images/SKOS.png" alt="logo" width="80" height="80">
+                </div>
+                
+                <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+            </div>
+
+            <div class="header-title-box">
+                <h1 class="header-h1">Explore Sultan Kudarat</h1>
+            </div>
+
+            <div class="collapse navbar-collapse justify-content-end" id="mainNav">
+                <div class="nav d-flex flex-column flex-lg-row align-items-center mt-3 mt-lg-0">
+                    <div class="dropdown">
+                        <button class="button">Must-Have</button>
+                        <div class="content">
+                            <a href="history.html">History & Origin</a>
+                            <a href="geography.html">Geography & Climate</a>
+                            <a href="people.html">People & Culture</a>
+                            <a href="language.html">Local Languages</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="button">Municipalities</button>
+                        <div class="content">
+                            <a href="isulan.html">Isulan</a>
+                            <a href="tacurong.html">Tacurong City</a>
+                            <a href="lebak.html">Lebak</a>
+                            <a href="kalamansig.html">Kalamansig</a>
+                            <a href="columbio.html">Columbio</a>
+                            <a href="aquino.html">Sen. Ninoy Aquino</a>
+                            <a href="esperanza.html">Esperanza</a>
+                            <a href="bagumbayan.html">Bagumbayan</a>
+                            <a href="palimbang.html">Palimbang</a>
+                            <a href="lambayong.html">Lambayong</a>
+                            <a href="lutayan.html">Lutayan</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="button">Traveler's Guide</button>
+                        <div class="content">
+                            <a href="transportation.html">Transportation</a>
+                            <a href="food.html">Signature Flavors</a>
+                            <a href="map.html">Spelunker’s Map</a>
+                            <a href="cultural.html">Cultural Etiquette</a>
+                            <a href="contact.html">Emergency Contacts</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="main-wrapper">
+        
+        <div class="hero position-relative overflow-hidden">
+            <img src="images/SK.jpeg" alt="Sultan" class="w-100 h-100 object-fit-cover">
+            <div class="hero-content">
+                <h1>The Golden Heart of Mindanao</h1>
+                <p>Experience a land of majestic domes, rolling ridges, and the enduring spirit of the Tri-People.</p>
+            </div>
+        </div>
+
+        <div class="section-divider"></div>
+
+        <div class="row g-0 align-items-stretch main-content-row">
+            <div class="col-lg-9 border-end-custom">
+                <div id="opCarousel" class="carousel slide h-100" data-bs-ride="carousel">
+                    <div class="carousel-inner h-100">
+                        <div class="carousel-item active h-100">
+                            <div class="op-box position-relative h-100">
+                                <img src="images/ISU.jpeg" class="d-block w-100 h-100 object-fit-cover" alt="Isulan">
+                                <div class="op-overlay">
+                                    <h1>Isulan</h1>
+                                    <h2>The Golden Capital</h2>
+                                    <p>Feature the architecture and the night lights.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item h-100">
+                            <div class="op-box position-relative h-100">
+                                <img src="images/TAC.jpeg" class="d-block w-100 h-100 object-fit-cover" alt="Tacurong">
+                                <div class="op-overlay">
+                                    <h1>Tacurong</h1>
+                                    <h2>The Bird Sanctuary</h2>
+                                    <p>Mention the 20,000 birds at Baras.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item h-100">
+                            <div class="op-box position-relative h-100">
+                                <img src="images/COL.jpeg" class="d-block w-100 h-100 object-fit-cover" alt="Columbio">
+                                <div class="op-overlay">
+                                    <h1>Columbio</h1>
+                                    <h2>The Little New Zealand</h2>
+                                    <p>Highlight the rolling green hills.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 sidebar d-flex flex-column justify-content-center px-4">
+                <h3>"Essentials" Trio</h3>
+                <p><strong>Heritage:</strong> Named after the legendary Sultan Muhammad Kudarat, our history is a story of courage and independence.</p>
+                <p><strong>Diversity:</strong> A harmonious "Melting Pot" where Maguindanaon, Indigenous Peoples, and Settlers live as one.</p>
+                <p class="mb-0"><strong>Nature:</strong> From the peak of the Daguma Range to the white sands of Kalamansig, adventure is around every corner.</p>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <p class="mb-1">Copyright © 2026 Provincial Government of Sultan Kudarat. All Rights Reserved.</p>
+            <a href="index.html" class="footer-home-link">Home Page</a>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
