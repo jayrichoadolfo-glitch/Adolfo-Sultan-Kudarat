@@ -10,18 +10,12 @@
 html, body {
     height: 100%;
     scroll-behavior: smooth;
-    background-color: #283b64; /* Prevents white gaps */
+    background-color: #f4f4f4; 
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
-    overflow-x: hidden;
 }
 
-p { font-size: 18px; }
-h1 { font-size: 3rem; }
-h3 { font-size: 30px; }
-a { font-size: 18px; }
-
-/* --- MAIN WRAPPER STRETCH --- */
+/* Forces the footer to the bottom if content is short */
 .main-wrapper {
     min-height: 100vh;
     display: flex;
@@ -32,9 +26,8 @@ a { font-size: 18px; }
     flex: 1 0 auto;
 }
 
-/* --- HEADER & NAVIGATION --- */
+/* --- HEADER --- */
 .header {
-    grid-area: header;
     background-color: #283b64;
     border-bottom: 3px solid #f3e731;
     padding: 10px 40px;
@@ -42,6 +35,7 @@ a { font-size: 18px; }
     justify-content: space-between;
     align-items: center;
     min-height: 100px;
+    position: relative;
     z-index: 2000;
 }
 
@@ -49,33 +43,30 @@ a { font-size: 18px; }
     font-size: 2.2rem;
     color: #f3e731;
     font-weight: bold;
-    white-space: nowrap;
 }
 
 .header-spacer {
-    height: 105px; 
+    height: 100px; 
 }
 
+/* --- NAVIGATION & BUTTONS --- */
 .nav {
     display: flex;
     gap: 10px;
     align-items: center;
-    justify-content: flex-end;
 }
 
-/* --- BUTTONS & DROPDOWNS --- */
-.dropdown, .home-btn-container, .home-btn {
+.dropdown, .home-btn-container {
     position: relative;
     width: 180px;
     height: 45px;
     border: 3px solid #f3e731 !important;
     background-color: #283b64;
     border-radius: 5px;
-    transition: 0.3s;
     display: flex;
     align-items: center;
     justify-content: center;
-    cursor: pointer;
+    transition: 0.3s;
 }
 
 .button, .nav-home-link {
@@ -84,9 +75,10 @@ a { font-size: 18px; }
     font-weight: bold;
     font-size: 18px;
     border: none;
+    cursor: pointer;
 }
 
-.dropdown:hover, .home-btn-container:hover, .home-btn:hover {
+.dropdown:hover, .home-btn-container:hover {
     background-color: #f3e731;
 }
 
@@ -102,7 +94,6 @@ a { font-size: 18px; }
     background-color: #4e7d40;
     min-width: 180px;
     border: 3px solid #f3e731;
-    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
     z-index: 100;
 }
 
@@ -112,133 +103,74 @@ a { font-size: 18px; }
     color: #fff;
     padding: 10px;
     display: block;
-    background-color: #4e7d40;
     font-weight: bold;
 }
 
-.content a:hover { background-color: #6ba43c; }
+/* --- HERO --- */
+.hero { 
+    height: 400px; 
+    position: relative; 
+    overflow: hidden; 
+    border-bottom: 3px solid #f3e731;
+}
 
-/* --- HERO SECTION --- */
-.hero { grid-area: hero; position: relative; overflow: hidden; height: 400px; }
-.hero img { width: 100%; height: 100%; object-fit: cover; position: absolute; }
+.hero img { width: 100%; height: 100%; object-fit: cover; }
+
 .hero-content {
     position: absolute;
     top: 50%; left: 50%;
     transform: translate(-50%, -50%);
-    text-align: center; color: #fff; width: 90%;
+    text-align: center;
+    color: #fff;
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
 }
-.hero-content h1 { font-size: 4rem; margin-bottom: 10px; }
 
-/* --- LAYOUT GRID --- */
+/* --- LAYOUT SECTIONS --- */
+.main { background-color: #5d2723; color: #fff; padding: 25px; }
+.sidebar { background-color: #6ba43c; color: #fff; padding: 25px; }
+
+/* Grid for the Home Page */
 .mas-container {
     display: grid;
-    padding: 15px;
-    min-height: 100vh;
     grid-template-columns: repeat(3, 1fr) 300px;
     grid-template-areas: 
-        "header  header  header  header"
-        "hero    hero    hero    hero"
-        "op1     op2     op3     sidebar"
-        "footer  footer  footer  footer";
+        "op1 op2 op3 sidebar";
 }
 
-.sub-page .mas-container {
-    grid-template-columns: 1fr 300px;
-    grid-template-areas: 
-        "header  header"
-        "hero    hero"
-        "main    sidebar"
-        "footer  footer";
-}
-
-.sub-page1 .mas-container {
-    grid-template-columns: repeat(3, 1fr) 300px;
-    grid-template-areas: 
-        "header  header  header  header"
-        "main    main    main    sidebar" 
-        "op1     op2     op3     sidebar" 
-        "footer  footer  footer  footer";
-}
-
-/* --- SECTION COLORS & ELEMENTS --- */
-.main, .op1, .op2, .op3 {
+/* Option Boxes (Must-Haves) */
+.op1, .op2, .op3 {
     padding: 25px;
     background-color: #5d2723;
     color: #fff;
     border: 3px solid #f3e731;
 }
 
-.main img, .op1 img, .op2 img, .op3 img {
-    width: 60%;
-    height: auto;
-    object-fit: cover;
-    border-radius: 8px;
-    border: 3px solid #f3e731;
-    display: block;       
-    margin: 0 auto 20px auto;   
-}
-
 .op-img {
     height: 250px;
     width: 100%;
     object-fit: cover;
-}
-
-.sidebar { 
-    grid-area: sidebar; 
-    background-color: #6ba43c; 
-    padding: 20px; 
-    color: #fff;
-}
-
-.sidebar img {
-    width: 100%; height: auto;
-    border-radius: 8px; margin-bottom: 15px;
+    border: 3px solid #f3e731;
+    margin-bottom: 15px;
 }
 
 /* --- FOOTER --- */
 .footer {
-    grid-area: footer;
     background: #283b64;
     color: #fff;
     text-align: center;
     padding: 20px;
-    margin-top: auto; 
+    width: 100%;
+    border-top: 3px solid #f3e731;
 }
 
-.footer a { color: #fff; font-size: 18px; }
-
-/* --- BORDERS & UTILITIES --- */
-.border-yellow { border: 3px solid #f3e731 !important; }
-.border-top-yellow { border-top: 3px solid #f3e731 !important; }
-
-/* --- MEDIA QUERIES --- */
-@media (max-width: 1024px) {
-    .mas-container, .sub-page .mas-container, .sub-page1 .mas-container {
-        grid-template-columns: 1fr 1fr; 
-        grid-template-areas: 
-            "header  header"
-            "hero    hero"
-            "main    main"
-            "op1     op2"
-            "op3     sidebar"
-            "footer  footer";
-    }
-}
-
+/* --- MOBILE REFINEMENTS --- */
 @media (max-width: 991px) {
-    .header-spacer { height: 100px; }
-    .header-h1 { font-size: 1.6rem; }
-    .dropdown, .home-btn-container { width: 100%; margin-bottom: 8px; }
-    .main { border-right: none; border-bottom: 3px solid #f3e731; }
+    .header { flex-direction: column; height: auto; padding: 20px; }
+    .nav { width: 100%; flex-direction: column; margin-top: 15px; }
+    .dropdown, .home-btn-container { width: 100%; }
     
-    .mas-container, .sub-page .mas-container, .sub-page1 .mas-container {
-        grid-template-columns: 1fr; 
-        grid-template-areas: 
-            "header" "nav" "hero" "main" "op1" "op2" "op3" "sidebar" "footer";
+    .mas-container {
+        grid-template-columns: 1fr;
+        grid-template-areas: "op1" "op2" "op3" "sidebar";
     }
-
-    .header { flex-direction: column; padding: 20px; height: auto; }
-    .nav { grid-area: nav; flex-wrap: wrap; justify-content: center; margin-top: 15px; }
 }
