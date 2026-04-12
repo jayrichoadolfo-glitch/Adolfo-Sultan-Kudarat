@@ -65,3 +65,56 @@ html, body { height: 100%; background-color: #f4f4f4; font-family: 'Segoe UI', s
     .border-end-custom { border-right: none; border-bottom: 3px solid #f3e731; }
     .dropdown { width: 100%; margin-bottom: 8px; }
 }
+
+/* --- UPDATED HEADER POSITIONING --- */
+.header {
+    background-color: #283b64; 
+    border-bottom: 3px solid #f3e731;
+    min-height: 120px; 
+    z-index: 2000;
+    display: flex;
+    align-items: center;
+}
+
+.header-spacer { height: 120px; }
+
+.header-h1 { 
+    font-size: 2.2rem; 
+    color: #f3e731; 
+    font-weight: bold;
+    text-align: right; /* Aligns title next to buttons as per screenshot */
+    margin-right: 20px !important;
+}
+
+/* Nav Button Container to allow stacking like the image */
+.nav-button-container {
+    max-width: 400px;
+}
+
+.dropdown {
+    position: relative; 
+    width: 170px; 
+    height: 40px;
+    border: 2px solid #f3e731 !important; 
+    background-color: transparent;
+    border-radius: 5px; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+}
+
+.button { 
+    background: transparent; 
+    color: #f3e731 !important; 
+    font-weight: bold; 
+    font-size: 14px;
+    border: none; 
+}
+
+/* MOBILE FIX */
+@media (max-width: 991px) {
+    .header { height: auto; padding: 10px 0; }
+    .header-h1 { font-size: 1.5rem; text-align: center; margin: 10px 0 !important; }
+    .nav-button-container { justify-content: center !important; max-width: 100%; }
+    .dropdown { width: 100%; }
+}
