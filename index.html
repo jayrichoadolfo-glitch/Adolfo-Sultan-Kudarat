@@ -1,170 +1,91 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Explore Sultan Kudarat</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        :root {
-            --sk-blue: #1a2a4a;
-            --sk-gold: #ffcc00;
-            --sk-brown: #4a2c2a;
-            --sk-green: #5a8d2b;
-        }
-
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
-
-        /* Navbar Styling */
-        .navbar { background-color: var(--sk-blue); }
-        .nav-link-custom {
-            border: 2px solid var(--sk-gold);
-            color: var(--sk-gold) !important;
-            border-radius: 5px;
-            margin: 0 5px;
-            /* Reverted rem to original 0.8rem px equivalent */
-            font-size: 12.8px; 
-            font-weight: bold;
-        }
-
-        /* Hero Section */
-        .hero-section {
-            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), 
-                        url('path-to-your-capitol-image.jpg') no-repeat center center;
-            background-size: cover;
-            min-height: 50vh;
-            color: white;
-            display: flex;
-            align-items: center;
-            border-bottom: 5px solid var(--sk-gold);
-        }
-
-        /* The Carousel "Hero" Slides */
-        .carousel-item-hero {
-            height: 450px; 
-            background-size: cover;
-            background-position: center;
-            position: relative;
-            color: white;
-        }
-
-        /* Content Centering within the Slide */
-        .carousel-item-hero .carousel-container {
-            position: absolute;
-            top: 0; left: 0; width: 100%; height: 100%;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            z-index: 2;
-            padding: 20px;
-        }
-
-        /* Overlay to ensure text readability */
-        .carousel-item-hero::before {
-            content: "";
-            position: absolute;
-            top: 0; left: 0; width: 100%; height: 100%;
-            background: rgba(0, 0, 0, 0.6); 
-            z-index: 1;
-        }
-
-        /* Essentials Box */
-        .essentials-box {
-            background-color: var(--sk-green);
-            color: white;
-            height: 100%;
-            padding: 30px;
-            min-height: 450px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
-
-        footer {
-            background-color: var(--sk-blue);
-            color: white;
-            /* Reverted rem to original 1rem px equivalent */
-            font-size: 16px; 
-            padding: 10px 0;
-        }
-    </style>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel=stylesheet href="styles/styles.css">
+	<link rel="icon" type="image/jpeg" href="images/FL.jpeg">
+	<title>Sultan Kudarat</title>
 </head>
 <body>
-
-    <nav class="navbar navbar-expand navbar-dark">
-        <div class="container">
-            <a class="navbar-brand d-flex align-items-center" href="#">
-                <img src="logo.png" alt="Logo" width="40" class="me-2">
-                <span class="fw-bold text-warning">Explore Sultan Kudarat</span>
-            </a>
-            <div class="navbar-nav ms-auto">
-                <a href="#" class="nav-link nav-link-custom px-3">Must-Have</a>
-                <a href="#" class="nav-link nav-link-custom px-3 text-center">Municipal<br>Spotlights</a>
-                <a href="#" class="nav-link nav-link-custom px-3">Traveler's Guide</a>
-            </div>
-        </div>
-    </nav>
-
-    <header class="hero-section">
-        <div class="container text-center">
-            <h1 class="display-3 fw-bold">The Golden Heart of Mindanao</h1>
-            <p class="lead">Experience a land of majestic domes, rolling ridges, and the enduring spirit of the Tri-People.</p>
-        </div>
-    </header>
-
-    <div class="container-fluid p-0">
-        <div class="row g-0">
-            <div class="col-md-9">
-                <div id="mainSpotlightCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="1000">
-                    <div class="carousel-inner">
-                        
-                        <div class="carousel-item active carousel-item-hero" style="background-image: url('isulan.jpg');">
-                            <div class="carousel-container">
-                                <h2 class="display-5 fw-bold text-warning">Isulan</h2>
-                                <h4 class="fw-bold">The Golden Capital</h4>
-                                <p class="lead">Feature the architecture and the night lights.</p>
-                            </div>
-                        </div>
-
-                        <div class="carousel-item carousel-item-hero" style="background-image: url('tacurong.jpg');">
-                            <div class="carousel-container">
-                                <h2 class="display-5 fw-bold text-warning">Tacurong</h2>
-                                <h4 class="fw-bold">The Bird Sanctuary</h4>
-                                <p class="lead">Home to 20,000 birds at Baras.</p>
-                            </div>
-                        </div>
-
-                        <div class="carousel-item carousel-item-hero" style="background-image: url('columbio.jpg');">
-                            <div class="carousel-container">
-                                <h2 class="display-5 fw-bold text-warning">Columbio</h2>
-                                <h4 class="fw-bold">The Little New Zealand</h4>
-                                <p class="lead">Highlight the rolling green hills.</p>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-3">
-                <div class="essentials-box border-start border-warning">
-                    <h3 class="fw-bold mb-4">"Essentials" Trio</h3>
-                    <p><strong>Heritage:</strong> Named after the legendary Sultan Muhammad Kudarat...</p>
-                    <p><strong>Diversity:</strong> A harmonious "Melting Pot" where Maguindanaon, Indigenous Peoples, and Settlers live as one.</p>
-                    <p><strong>Nature:</strong> From the peak of the Daguma Range to the white sands of Kalamansig.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <footer class="text-center">
-        <div class="container">
-            Copyright © 2026 Provincial Government of Sultan Kudarat. All Rights Reserved.
-        </div>
-    </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+	<div class="mas-container">
+		<div class="header">
+			<div class="header-brand">
+				<img src="images/SKOS.png" alt="pic" width="155" height="150">
+				<h1>Explore Sultan Kudarat</h1>
+			</div>
+			<div class="nav">
+				<div class="dropdown">
+					<button class="button">Must-Have</button>
+					<div class="content">
+						<a href="history.html">History & Origin</a>
+						<a href="geography.html">Geography & Climate</a>
+						<a href="people.html">People & Culture</a>
+						<a href="language.html">Local Languages</a>
+					</div>
+				</div>
+				<div class="dropdown">
+					<button class="button">Municipal Spotlights</button>
+					<div class="content">
+						<a href="isulan.html">Isulan</a>
+						<a href="tacurong.html">Tacurong City</a>
+						<a href="lebak.html">Lebak</a>
+						<a href="kalamansig.html">Kalamansig</a>
+						<a href="columbio.html">Columbio</a>
+						<a href="aquino.html">Sen. Ninoy Aquino</a>
+						<a href="esperanza.html">Esperanza</a>
+						<a href="bagumbayan.html">Bagumbayan</a>
+						<a href="palimbang.html">Palimbang</a>
+						<a href="lambayong.html">Lambayong</a>
+						<a href="lutayan.html">Lutayan</a>
+					</div>
+				</div>
+				<div class="dropdown">
+					<button class="button">Traveler's Guide</button>
+					<div class="content">
+						<a href="transportation.html">Transportation</a>
+						<a href="food.html">Signature Flavors</a>
+						<a href="map.html">Spelunker’s Map</a>
+						<a href="cultural.html">Cultural Etiquette</a>
+						<a href="contact.html">Directory & Emergency Contacts</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="hero">
+			<img src="images/SK.jpeg" alt="Sultan">
+			<div class="hero-content">
+				<h1>The Golden Heart of Mindanao</h1>
+				<p>Experience a land of majestic domes, rolling ridges, and the enduring spirit of the Tri-People.</p>
+			</div>
+		</div>
+		<div class="sidebar">
+			<h3>"Essentials" Trio</h3>
+			<p><strong>Heritage:</strong> Named after the legendary Sultan Muhammad Kudarat, our history is a story of courage and independence.</p>
+			<p><strong>Diversity:</strong> A harmonious "Melting Pot" where Maguindanaon, Indigenous Peoples, and Settlers live as one.</p>
+			<p><strong>Nature:</strong> From the peak of the Daguma Range to the white sands of Kalamansig, adventure is around every corner.</p>
+		</div>
+		<div class="op1">
+			<img src="images/ISU.jpeg" alt="pic">
+			<h1>Isulan</h1>
+			<h2>The Golden Capital</h2>
+			<p>Feature the architecture and the night lights.</p>
+		</div>
+		<div class="op2">
+			<img src="images/TAC.jpeg" alt="pic">
+			<h1>Tacurong</h1>
+			<h2>The Bird Sanctuary</h2>
+			<p>Mention the 20,000 birds at Baras.</p>
+		</div>
+		<div class="op3">
+			<img src="images/COL.jpeg" alt="pic">
+			<h1>Columbio</h1>
+			<h2>The Little New Zealand</h2>
+			<p> Highlight the rolling green hills.</p>
+		</div>
+		<div class="footer">
+			<p>Copyright © 2026 Provincial Government of Sultan Kudarat. All Rights Reserved.</p>
+		</div>
+	</div>
 </body>
 </html>
