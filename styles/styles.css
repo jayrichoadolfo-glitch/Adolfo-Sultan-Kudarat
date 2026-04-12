@@ -1,6 +1,7 @@
 * { margin: 0; padding: 0; box-sizing: border-box; text-decoration: none !important; list-style: none; }
 html, body { height: 100%; background-color: #f4f4f4; font-family: 'Segoe UI', sans-serif; }
 
+/* HEADER */
 .header { background-color: #283b64; border-bottom: 3px solid #f3e731; min-height: 100px; z-index: 2000; }
 .header-spacer { height: 120px; }
 .header-h1 { font-size: 2.2rem; color: #f3e731; font-weight: bold; }
@@ -15,18 +16,28 @@ html, body { height: 100%; background-color: #f4f4f4; font-family: 'Segoe UI', s
 .button { background: transparent; color: #f3e731 !important; font-weight: bold; border: none; cursor: pointer; }
 
 .content {
-    display: none; position: absolute; top: 100%; left: 0;
+    display: none; position: absolute; top: 100%; right: 0;
     background-color: #4e7d40; min-width: 220px; max-height: 400px; 
     overflow-y: auto; border: 3px solid #f3e731; z-index: 100;
 }
 .dropdown:hover .content { display: block; }
 .content a { color: #fff; padding: 10px; display: block; font-weight: bold; }
 
-.hero { height: 400px; border-bottom: 3px solid #f3e731; }
+/* HERO OVERLAP FIX */
+.hero { height: 450px; border-bottom: 3px solid #f3e731; position: relative; }
+.hero-overlay-content {
+    position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+    text-align: center; color: #fff; width: 80%; text-shadow: 2px 2px 10px rgba(0,0,0,0.7);
+    z-index: 10;
+}
+.hero-overlay-content h1 { font-size: 3rem; font-weight: bold; color: #fff; }
+.hero-overlay-content p { font-size: 1.2rem; }
+
+/* MAIN CONTENT */
 .main-content-row { display: flex; flex-wrap: wrap; min-height: 550px; }
 #opCarousel, .carousel-inner, .carousel-item { height: 550px !important; }
 
-.sidebar { background-color: #6ba43c; color: #fff; padding: 40px; line-height: 1.6; }
+.sidebar { background-color: #6ba43c; color: #fff; padding: 40px; }
 .border-end-custom { border-right: 3px solid #f3e731; }
 
 .op-overlay {
@@ -37,8 +48,11 @@ html, body { height: 100%; background-color: #f4f4f4; font-family: 'Segoe UI', s
 
 .footer { background: #283b64; color: #fff; text-align: center; padding: 25px; border-top: 3px solid #f3e731; }
 
+/* MOBILE RESPONSIVENESS */
 @media (max-width: 991px) {
     .header-spacer { height: 180px; }
+    .hero { height: 350px; }
+    .hero-overlay-content h1 { font-size: 2rem; }
     .main-content-row { flex-direction: column; }
     .dropdown { width: 100%; }
     .border-end-custom { border-right: none; border-bottom: 3px solid #f3e731; }
