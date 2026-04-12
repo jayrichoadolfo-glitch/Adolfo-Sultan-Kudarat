@@ -1,11 +1,6 @@
 * { margin: 0; padding: 0; box-sizing: border-box; text-decoration: none !important; list-style: none; }
 html, body { height: 100%; background-color: #f4f4f4; font-family: 'Segoe UI', sans-serif; }
 
-p { font-size: 18px; }
-h1 { font-size: 3rem; }
-h3 { font-size: 30px; color: #f3e731;}
-a { font-size: 18px; }
-
 /* HEADER */
 .header { background-color: #283b64; border-bottom: 3px solid #f3e731; min-height: 100px; z-index: 2000; }
 .header-spacer { height: 120px; }
