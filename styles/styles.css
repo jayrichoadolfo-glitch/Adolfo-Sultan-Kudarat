@@ -39,28 +39,7 @@ a{
 .dropdown:hover .content { display: block; }
 .content a { color: #fff; padding: 10px; display: block; font-weight: bold; }
 
-/* HERO OVERLAP FIX */
-.hero { height: 450px; border-bottom: 3px solid #f3e731; position: relative; }
-.hero-overlay-content {
-    position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
-    text-align: center; color: #fff; width: 80%; text-shadow: 2px 2px 10px rgba(0,0,0,0.7);
-    z-index: 10;
-}
-.hero-overlay-content h1 { font-size: 3rem; font-weight: bold; color: #fff; }
-.hero-overlay-content p { font-size: 1.2rem; }
 
-/* MAIN CONTENT */
-.main-content-row { display: flex; flex-wrap: wrap; min-height: 550px; }
-#opCarousel, .carousel-inner, .carousel-item { height: 550px !important; }
-
-.sidebar { background-color: #6ba43c; color: #fff; padding: 40px; }
-.border-end-custom { border-right: 3px solid #f3e731; }
-
-.op-overlay {
-    position: absolute; bottom: 0; left: 0; right: 0;
-    padding: 40px; background: linear-gradient(transparent, rgba(0,0,0,0.8));
-    color: #fff;
-}
 
 .footer { background: #283b64; color: #fff; text-align: center; padding: 25px; border-top: 3px solid #f3e731; }
 
