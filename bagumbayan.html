@@ -3,28 +3,35 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bagumbayan - The Agri-Adventure Hub</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="icon" type="image/jpeg" href="images/FL.jpeg">
-    <title>Bagumbayan - The Agri-Adventure Hub</title>
 </head>
 <body class="sub-page">
 
-    <nav class="navbar navbar-expand-lg header fixed-top">
-        <div class="container-fluid px-4 branding-wrapper">
-            <div class="d-flex align-items-center">
-                <img src="images/SKOS.png" alt="logo" width="85" height="80">
-                <h1 class="header-h1 mb-0 ms-3">Welcome</h1>
+    <nav class="navbar navbar-expand-lg header p-0 fixed-top">
+        <div class="container-fluid px-4 py-2 branding-wrapper">
+            <div class="d-flex align-items-center gap-3">
+                <div class="header-brand">
+                    <img src="images/SKOS.png" alt="logo" width="80" height="80">
+                </div>
+                <div class="header-title-box d-none d-lg-block">
+                    <h1 class="header-h1 m-0">Explore Sultan Kudarat</h1>
+                </div>
+                <button class="navbar-toggler custom-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
             </div>
 
-            <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
-                <span class="hamburger-line"></span>
-                <span class="hamburger-line"></span>
-                <span class="hamburger-line"></span>
-            </button>
+            <div class="header-title-box w-100 text-center d-lg-none">
+                <h1 class="header-h1 m-0">Explore Sultan Kudarat</h1>
+            </div>
 
-            <div class="collapse navbar-collapse justify-content-end" id="mainNav">
-                <div class="navbar-nav gap-2 py-3 py-lg-0">
+            <div class="collapse navbar-collapse" id="mainNav">
+                <div class="nav d-flex flex-row align-items-center ms-auto gap-2">
                     <div class="dropdown">
                         <button class="button">Must-Have</button>
                         <div class="content">
@@ -57,60 +64,74 @@
                             <a href="food.html">Signature Flavors</a>
                             <a href="map.html">Spelunker’s Map</a>
                             <a href="cultural.html">Cultural Etiquette</a>
-                            <a href="contact.html">Contacts</a>
+                            <a href="contact.html">Emergency Contacts</a>
                         </div>
                     </div>
-                    <div class="home-btn-container">
-                        <a href="index.html" class="button nav-home-link">Home Page</a>
-                    </div>
+                    <a href="index.html" class="home-btn-link">Home</a>
                 </div>
             </div>
         </div>
     </nav>
 
-    <div class="header-spacer"></div>
+    <div class="main-wrapper">
+        <div class="header-spacer"></div>
 
-    <div class="container-fluid main-wrapper p-0 d-flex flex-column min-vh-100">
-        
-        <div class="row g-0 flex-grow-1">
-            <div class="col-lg-9 main p-4 p-md-5">
-                <h1 class="display-4 mb-4">Bagumbayan: The Agri-Adventure Hub</h1>
-                
-                <img src="images/bayan.jpeg" alt="Bagumbayan View" class="img-fluid rounded border-yellow mb-4">
-                
-                <h3 class="mb-3">Background</h3>
-                <p>What started as a humble resettlement area for farmers has transformed into the <strong>"Adventure Capital"</strong> of the province. Bagumbayan sits at a high elevation, offering some of the most dramatic views in Central Mindanao.</p>
-                
-                <h3 class="mt-4 mb-3">The Highlight</h3>
-                <p><strong>Bansada Agri-Eco Park</strong> is the crown jewel. On a clear morning, the park is engulfed in a breathtaking <strong>"Sea of Clouds."</strong> It features one of the longest ziplines in the region, soaring over fruit orchards and coffee plantations.</p>
-                
-                <h3 class="mt-4 mb-3">The Vibe</h3>
-                <p>It feels like a mountain retreat. The air is crisp, and the landscape is dominated by pine trees and organized agriculture. It is the go-to spot for those seeking adrenaline and tranquility in one trip.</p>
-            </div>
+        <div class="bg-dark p-4 p-md-5 text-white border-bottom border-warning">
+            <h1 class="display-4 text-warning fw-bold">Bagumbayan</h1>
+            <p class="lead mb-0">The Agri-Adventure Capital of the Golden Heart.</p>
+        </div>
+
+        <div class="row g-0 align-items-stretch main-content-row">
             
-            <div class="col-lg-3 sidebar p-4">
-                <h3 class="mb-4">Quick Info</h3>
+            <div class="col-lg-9 bg-card-area border-end border-warning border-3">
+                <div class="content-card">
+                    <div class="text-center mb-5">
+                        <img src="images/bayan.jpeg" alt="Bagumbayan Landscape" class="img-fluid rounded border border-warning border-3 shadow-lg" style="max-height: 500px;">
+                    </div>
+                    <div class="content-text fs-5">
+                        <h3>Background</h3>
+                        <p>What started as a humble resettlement area for farmers has transformed into the <strong>"Adventure Capital"</strong> of the province. Bagumbayan sits at a high elevation, offering some of the most dramatic views in Central Mindanao.</p>
+                        
+                        <hr class="my-4 border-warning">
+                        
+                        <h3>The Highlight: Bansada Agri-Eco Park</h3>
+                        <p>This park is the crown jewel of the municipality. On a clear morning, visitors are treated to a breathtaking <strong>"Sea of Clouds"</strong> that engulfs the valleys below. For thrill-seekers, it features one of the longest ziplines in the region, soaring over sprawling fruit orchards and coffee plantations.</p>
+                        
+                        <hr class="my-4 border-warning">
+
+                        <h3>The Vibe</h3>
+                        <p>It feels like a true mountain retreat. The air is crisp, and the landscape is dominated by pine trees and organized agriculture. It is the go-to spot for those seeking a balance of adrenaline and high-altitude tranquility.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 sidebar d-flex flex-column justify-content-center px-4">
+                <h3 class="text-warning mb-4">Quick Info</h3>
                 
-                <img src="images/line.jpg" alt="Zipline Adventure" class="img-fluid rounded border-yellow mb-3 sidebar-img">
+                <div class="text-center mb-4">
+                     <img src="images/line.jpg" alt="Zipline Adventure" class="img-fluid rounded border border-warning border-2 shadow-sm">
+                </div>
+
+                <div class="mb-4">
+                    <p class="mb-1 small text-uppercase fw-bold">Altitude</p>
+                    <p class="fs-5">High Elevation (Cool Climate)</p>
+                </div>
                 
                 <div class="mb-4">
-                    <p class="mb-0 small text-uppercase fw-bold text-warning">Altitude</p>
-                    <p>High Elevation (Cool Climate)</p>
+                    <p class="mb-1 small text-uppercase fw-bold">Best Time</p>
+                    <p class="fs-5">5:00 AM (Sea of Clouds)</p>
                 </div>
-                <div class="mb-4">
-                    <p class="mb-0 small text-uppercase fw-bold text-warning">Best Time</p>
-                    <p>5:00 AM (for the Sea of Clouds)</p>
-                </div>
-                <div>
-                    <p class="mb-0 small text-uppercase fw-bold text-warning">Activity</p>
-                    <p>Ziplining & Sky-biking</p>
+
+                <div class="bg-dark p-3 rounded border border-warning">
+                    <p class="mb-1 small text-uppercase fw-bold text-warning">Activity</p>
+                    <p class="small mb-0"><strong>Ziplining & Sky-biking</strong>. Experience the heights of Bansada Agri-Eco Park.</p>
                 </div>
             </div>
         </div>
 
-        <footer class="footer py-4 border-top-yellow text-center">
-            <p class="mb-2">Copyright © 2026 Provincial Government of Sultan Kudarat. All Rights Reserved.</p>
-            <a href="index.html" class="footer-home-link">Back to Home Page</a>
+        <footer class="footer">
+            <p class="mb-1">Copyright © 2026 Provincial Government of Sultan Kudarat. All Rights Reserved.</p>
+            <a href="index.html" style="color: white; text-decoration: underline !important;">Back to Home Page</a>
         </footer>
     </div>
 
