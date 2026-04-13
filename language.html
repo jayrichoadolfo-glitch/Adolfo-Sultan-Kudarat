@@ -3,28 +3,35 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Local Languages - Let's Talk</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="icon" type="image/jpeg" href="images/FL.jpeg">
-    <title>Local Languages</title>
 </head>
 <body class="sub-page1">
 
-    <nav class="navbar navbar-expand-lg header fixed-top">
-        <div class="container-fluid px-4 branding-wrapper">
-            <div class="d-flex align-items-center">
-                <img src="images/SKOS.png" alt="logo" width="85" height="80">
-                <h1 class="header-h1 mb-0 ms-3">Let's Talk</h1>
+    <nav class="navbar navbar-expand-lg header p-0 fixed-top">
+        <div class="container-fluid px-4 py-2 branding-wrapper">
+            <div class="d-flex align-items-center gap-3">
+                <div class="header-brand">
+                    <img src="images/SKOS.png" alt="logo" width="80" height="80">
+                </div>
+                <div class="header-title-box d-none d-lg-block">
+                    <h1 class="header-h1 m-0">Let's Talk</h1>
+                </div>
+                <button class="navbar-toggler custom-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
             </div>
 
-            <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
-                <span class="hamburger-line"></span>
-                <span class="hamburger-line"></span>
-                <span class="hamburger-line"></span>
-            </button>
+            <div class="header-title-box w-100 text-center d-lg-none">
+                <h1 class="header-h1 m-0">Let's Talk</h1>
+            </div>
 
-            <div class="collapse navbar-collapse justify-content-end" id="mainNav">
-                <div class="navbar-nav gap-2 py-3 py-lg-0">
+            <div class="collapse navbar-collapse" id="mainNav">
+                <div class="nav d-flex flex-row align-items-center ms-auto gap-2">
                     <div class="dropdown">
                         <button class="button">Must-Have</button>
                         <div class="content">
@@ -57,77 +64,89 @@
                             <a href="food.html">Signature Flavors</a>
                             <a href="map.html">Spelunker’s Map</a>
                             <a href="cultural.html">Cultural Etiquette</a>
-                            <a href="contact.html">Contacts</a>
+                            <a href="contact.html">Emergency Contacts</a>
                         </div>
                     </div>
-                    <div class="home-btn-container">
-                        <a href="index.html" class="button nav-home-link">Home Page</a>
-                    </div>
+                    <a href="index.html" class="home-btn-link">Home</a>
                 </div>
             </div>
         </div>
     </nav>
 
-    <div class="header-spacer"></div>
+    <div class="main-wrapper">
+        <div class="header-spacer"></div>
 
-    <div class="container-fluid main-wrapper p-0 d-flex flex-column min-vh-100">
-        
-        <div class="row g-0 flex-grow-0">
-            <div class="col-lg-9 main p-4 p-md-5 order-1">
-                <h1 class="display-4 mb-4">Dialects</h1>
-                <p>While <strong>Hiligaynon</strong> (Ilonggo) is the primary tongue used in commerce and daily life, the province is a linguistic treasure. In the highlands, you will hear the ancient chants of the <strong>Manobo</strong>; in the coastal towns, the melodic <strong>Maguindanaon</strong>; and in the north, the sharp, rhythmic <strong>Ilocano</strong>.</p>
-                <p>In Sultan Kudarat, you don't just speak a language; you speak a history of migration and co-existence.</p>
-                <p>Most locals are trilingual, easily shifting between their native dialect, Tagalog, and English to welcome visitors.</p>
+        <div class="hero" style="height: 40vh;">
+            <img src="images/SK.jpeg" alt="Cultural Background" class="hero-img" style="filter: brightness(0.4);">
+            <div class="hero-overlay-content p-4 text-center">
+                <h1 class="display-3 fw-bold text-warning">Dialects & Phrases</h1>
+                <p class="lead">In Sultan Kudarat, you speak a history of migration and co-existence.</p>
             </div>
+        </div>
+
+        <div class="row g-0 main-content-row">
             
-            <div class="col-lg-3 sidebar p-4 order-2 order-lg-3">
-                <h3 class="mb-4">Quick Info</h3>
-                <div class="mb-4">
-                    <p class="mb-0 small text-uppercase fw-bold text-warning">Primary</p>
-                    <p>Hiligaynon (Ilonggo)</p>
+            <div class="col-lg-9">
+                <div class="row g-0">
+                    <div class="col-md-6 op-box" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('images/pastil.png'); background-size: cover; background-position: center;">
+                        <div class="op-overlay">
+                            <h2 class="text-warning fw-bold mb-4">English</h2>
+                            <div class="phrase-list small">
+                                <p>Good morning</p><p>Good afternoon</p><p>Thank you</p>
+                                <p>How are you?</p><p>I'm fine</p><p>Yes / No</p>
+                                <p>How much is this?</p><p>Delicious!</p><p>Where is the...?</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 op-box" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('images/tag.jpg'); background-size: cover; background-position: center;">
+                        <div class="op-overlay">
+                            <h2 class="text-warning fw-bold mb-4">Hiligaynon</h2>
+                            <div class="phrase-list small">
+                                <p>Maayong aga</p><p>Maayong hapon</p><p>Salamat</p>
+                                <p>Kamusta ka?</p><p>Maayo man</p><p>Huo / Indi</p>
+                                <p>Tag-pila ini?</p><p>Namit!</p><p>Diin ang...?</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-12 op-box" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('images/coffee.jpeg'); background-size: cover; background-position: center;">
+                        <div class="op-overlay">
+                            <h2 class="text-warning fw-bold mb-4">Maguindanaon</h2>
+                            <div class="phrase-list small">
+                                <p>Mapia mapita</p><p>Mapia mawatu</p><p>Shukran</p>
+                                <p>Endu nika?</p><p>Mapia bo</p><p>Hu / Di</p>
+                                <p>Pila ini?</p><p>Maganit!</p><p>Endaw i...?</p>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
+            </div>
+
+            <div class="col-lg-3 sidebar text-center p-4">
+                <h3 class="mb-5 text-warning border-bottom border-warning pb-2">Quick Info</h3>
+                
                 <div class="mb-4">
-                    <p class="mb-0 small text-uppercase fw-bold text-warning">Secondary</p>
-                    <p>Maguindanaon, Ilocano.</p>
+                    <p class="mb-1 small text-uppercase fw-bold text-white">Primary</p>
+                    <p class="fs-5">Hiligaynon (Ilonggo)</p>
                 </div>
-                <div>
-                    <p class="mb-0 small text-uppercase fw-bold text-warning">Language Tip</p>
-                    <p>"Salamat" is understood by all!</p>
+                
+                <div class="mb-4">
+                    <p class="mb-1 small text-uppercase fw-bold text-white">Secondary</p>
+                    <p class="fs-5 text-white-50">Maguindanaon, Ilocano</p>
+                </div>
+
+                <div class="bg-dark p-3 rounded border border-warning shadow-lg mt-5">
+                    <p class="mb-1 small text-uppercase fw-bold text-warning">Language Tip</p>
+                    <p class="small mb-0 text-white">"Salamat" is understood by everyone!</p>
                 </div>
             </div>
         </div>
 
-        <div class="row g-0 flex-grow-1 border-top-yellow">
-            <div class="col-lg-3 op1 p-4 border-end-yellow">
-                <h3 class="culture-label text-center mb-3">English</h3>
-                <div class="phrase-list text-center">
-                    <p>Good morning</p><p>Good afternoon</p><p>Thank you</p>
-                    <p>How are you?</p><p>I'm fine</p><p>Yes / No</p>
-                    <p>How much is this?</p><p>Delicious!</p><p>Where is the...?</p>
-                </div>
-            </div>
-            <div class="col-lg-3 op2 p-4 border-end-yellow">
-                <h3 class="culture-label text-center mb-3">Hiligaynon</h3>
-                <div class="phrase-list text-center">
-                    <p>Maayong aga</p><p>Maayong hapon</p><p>Salamat</p>
-                    <p>Kamusta ka?</p><p>Maayo man</p><p>Huo / Indi</p>
-                    <p>Tag-pila ini?</p><p>Namit!</p><p>Diin ang...?</p>
-                </div>
-            </div>
-            <div class="col-lg-3 op3 p-4 border-end-yellow">
-                <h3 class="culture-label text-center mb-3">Maguindanaon</h3>
-                <div class="phrase-list text-center">
-                    <p>Mapia mapita</p><p>Mapia mawatu</p><p>Shukran</p>
-                    <p>Endu nika?</p><p>Mapia bo</p><p>Hu / Di</p>
-                    <p>Pila ini?</p><p>Maganit!</p><p>Endaw i...?</p>
-                </div>
-            </div>
-            <div class="col-lg-3 sidebar d-none d-lg-block order-lg-4"></div>
-        </div>
-
-        <footer class="footer py-4 border-top-yellow text-center">
-            <p class="mb-2">Copyright © 2026 Provincial Government of Sultan Kudarat. All Rights Reserved.</p>
-            <a href="index.html" class="footer-home-link">Back to Home Page</a>
+        <footer class="footer">
+            <p class="mb-1">Copyright © 2026 Provincial Government of Sultan Kudarat. All Rights Reserved.</p>
+            <a href="index.html" style="color: white; text-decoration: underline !important;">Back to Home Page</a>
         </footer>
     </div>
 
