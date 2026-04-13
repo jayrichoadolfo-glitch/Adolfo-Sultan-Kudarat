@@ -3,28 +3,35 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Transportation - Traveler's Guide</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="icon" type="image/jpeg" href="images/FL.jpeg">
-    <title>Transportation - Traveler's Guide</title>
 </head>
 <body class="sub-page">
 
-    <nav class="navbar navbar-expand-lg header fixed-top">
-        <div class="container-fluid px-4 branding-wrapper">
-            <div class="d-flex align-items-center">
-                <img src="images/SKOS.png" alt="logo" width="85" height="80">
-                <h1 class="header-h1 mb-0 ms-3">Ride it</h1>
+    <nav class="navbar navbar-expand-lg header p-0 fixed-top">
+        <div class="container-fluid px-4 py-2 branding-wrapper">
+            <div class="d-flex align-items-center gap-3">
+                <div class="header-brand">
+                    <img src="images/SKOS.png" alt="logo" width="80" height="80">
+                </div>
+                <div class="header-title-box d-none d-lg-block">
+                    <h1 class="header-h1 m-0">Ride it</h1>
+                </div>
+                <button class="navbar-toggler custom-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
             </div>
 
-            <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
-                <span class="hamburger-line"></span>
-                <span class="hamburger-line"></span>
-                <span class="hamburger-line"></span>
-            </button>
+            <div class="header-title-box w-100 text-center d-lg-none">
+                <h1 class="header-h1 m-0">Ride it</h1>
+            </div>
 
-            <div class="collapse navbar-collapse justify-content-end" id="mainNav">
-                <div class="navbar-nav gap-2 py-3 py-lg-0">
+            <div class="collapse navbar-collapse" id="mainNav">
+                <div class="nav d-flex flex-row align-items-center ms-auto gap-2">
                     <div class="dropdown">
                         <button class="button">Must-Have</button>
                         <div class="content">
@@ -57,85 +64,103 @@
                             <a href="food.html">Signature Flavors</a>
                             <a href="map.html">Spelunker’s Map</a>
                             <a href="cultural.html">Cultural Etiquette</a>
-                            <a href="contact.html">Contacts</a>
+                            <a href="contact.html">Emergency Contacts</a>
                         </div>
                     </div>
-                    <div class="home-btn-container">
-                        <a href="index.html" class="button nav-home-link">Home Page</a>
-                    </div>
+                    <a href="index.html" class="home-btn-link">Home</a>
                 </div>
             </div>
         </div>
     </nav>
 
-    <div class="header-spacer"></div>
+    <div class="main-wrapper">
+        <div class="header-spacer"></div>
 
-    <div class="container-fluid main-wrapper p-0 d-flex flex-column min-vh-100">
-        
-        <div class="row g-0 flex-grow-1">
-            <div class="col-lg-9 main p-4 p-md-5">
-                <h1 class="display-4 mb-4 text-warning">Transportation Guide</h1>
-                
-                <img src="images/SKM.png" alt="Sultan Kudarat Transit Map" class="img-fluid rounded border-yellow mb-4">
-                
-                <p class="lead">Sultan Kudarat is the central gateway of South Central Mindanao. The city of <strong>Tacurong</strong> serves as the primary "Grand Central Terminal" where all major land routes intersect.</p>
-                
-                <div class="row mt-4">
-                    <div class="col-md-6 mb-4">
-                        <h3 class="text-warning">Major Bus Lines</h3>
-                        <ul class="list-unstyled">
-                            <li class="mb-2"><strong>Yellow Bus Line (YBL):</strong> Connects the province to General Santos City and Davao City.</li>
-                            <li><strong>Husky Bus:</strong> The primary link to Cotabato City and General Santos.</li>
-                        </ul>
-                    </div>
-                    <div class="col-md-6 mb-4">
-                        <h3 class="text-warning">Primary Hubs</h3>
-                        <p><strong>Tacurong City</strong> and <strong>Isulan</strong> are the main terminals. Whether you are coming from Davao, GenSan, or Cotabato, you will likely pass through these transit hearts.</p>
-                    </div>
-                </div>
+        <div class="bg-dark p-4 p-md-5 text-white border-bottom border-warning">
+            <h1 class="display-4 text-warning fw-bold">Transportation Guide</h1>
+            <p class="lead mb-0">Navigating the central gateway of South Central Mindanao.</p>
+        </div>
 
-                <h3 class="mt-4 text-warning">The Coastal Route</h3>
-                <p>The <strong>Sen. Ninoy Aquino (SNA)</strong> mountain road is a marvel of engineering. This scenic, winding highway through the Daguma Range has cut travel time to the coastal towns of Lebak and Kalamansig by hours, replacing the old, long sea voyages.</p>
-
-                <h3 class="mt-4 text-warning">Local Transport</h3>
-                <div class="row">
-                    <div class="col-sm-6 mb-3">
-                        <p><strong>The "Skylab"</strong><br>An iconic modified motorcycle with wooden "wings" for balance. These are essential for reaching remote mountain ridges like those in Columbio.</p>
+        <div class="row g-0 align-items-stretch main-content-row">
+            
+            <div class="col-lg-9 bg-card-area border-end border-warning border-3">
+                <div class="content-card">
+                    <div class="text-center mb-5">
+                        <img src="images/SKM.png" alt="Sultan Kudarat Transit Map" class="img-fluid rounded border border-warning border-3 shadow-lg">
                     </div>
-                    <div class="col-sm-6 mb-3">
-                        <p><strong>Tricycles</strong><br>The "King of the Road" for short distances. Every town has a unique tricycle design suited to its specific terrain.</p>
+                    
+                    <div class="content-text fs-5">
+                        <p class="lead fw-bold text-warning">Sultan Kudarat serves as the primary transit heart of the region. The city of Tacurong acts as the "Grand Central Terminal" where major provincial land routes intersect.</p>
+                        
+                        <div class="row mt-5">
+                            <div class="col-md-6 mb-4">
+                                <h3 class="text-warning h4">Major Bus Lines</h3>
+                                <ul class="list-unstyled">
+                                    <li class="mb-2"><span class="text-warning">●</span> <strong>Yellow Bus Line (YBL):</strong> Connects to General Santos City and Davao City.</li>
+                                    <li><span class="text-warning">●</span> <strong>Husky Bus:</strong> The primary link to Cotabato City and General Santos.</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6 mb-4">
+                                <h3 class="text-warning h4">Primary Hubs</h3>
+                                <p><strong>Tacurong City</strong> and <strong>Isulan</strong> are the transit nerve centers. Most inter-provincial routes converge here before heading to coastal or mountain destinations.</p>
+                            </div>
+                        </div>
+
+                        <hr class="my-4 border-warning">
+
+                        <h3 class="text-warning mb-3">The Coastal Route</h3>
+                        <p>The <strong>Sen. Ninoy Aquino (SNA)</strong> mountain road is an engineering marvel. This scenic, winding highway through the Daguma Range has replaced long sea voyages, cutting travel time to the coastal gems of Lebak and Kalamansig by hours.</p>
+                        
+                        <hr class="my-4 border-warning">
+
+                        <h3 class="text-warning mb-3">Local Transport Icons</h3>
+                        <div class="row g-4">
+                            <div class="col-md-6">
+                                <div class="p-3 border border-warning rounded bg-dark-subtle">
+                                    <p class="fw-bold text-warning mb-1">The "Skylab"</p>
+                                    <p class="small mb-0">Modified motorcycles with wooden "wings" designed for balance on rugged mountain ridges like those in Columbio.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="p-3 border border-warning rounded bg-dark-subtle">
+                                    <p class="fw-bold text-warning mb-1">Tricycles</p>
+                                    <p class="small mb-0">The local "King of the Road." Every municipality features a unique design adapted to its specific terrain.</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            
-            <div class="col-lg-3 sidebar p-4">
-                <h3 class="mb-4">Quick Transit Info</h3>
+
+            <div class="col-lg-3 sidebar d-flex flex-column justify-content-start px-4 pt-5 text-center">
+                <h3 class="text-warning mb-4">Quick Transit Info</h3>
                 
-                <img src="images/bus.jpg" alt="Provincial Bus" class="img-fluid rounded border-yellow mb-3 sidebar-img">
-                
-                <div class="mb-4">
-                    <p class="mb-0 small text-uppercase fw-bold text-warning">Main Hub</p>
-                    <p>Tacurong Public Terminal</p>
+                <img src="images/bus.jpg" alt="Provincial Bus" class="img-fluid rounded border border-warning mb-4 shadow-sm">
+
+                <div class="mb-4 text-start">
+                    <p class="mb-1 small text-uppercase fw-bold text-white">Main Hub</p>
+                    <p class="fs-6 text-warning">Tacurong Public Terminal</p>
                 </div>
                 
-                <div class="mb-4">
-                    <p class="mb-0 small text-uppercase fw-bold text-warning">Travel Times</p>
-                    <ul class="list-unstyled small">
+                <div class="mb-4 text-start">
+                    <p class="mb-1 small text-uppercase fw-bold text-white">Approx. Travel Times</p>
+                    <ul class="list-unstyled small text-white-50">
                         <li>• From GenSan: 1.5 - 2 Hours</li>
                         <li>• From Davao: 4 - 5 Hours</li>
+                        <li>• From Cotabato: 2 - 2.5 Hours</li>
                     </ul>
                 </div>
 
-                <div class="bg-dark p-3 rounded border-start border-warning border-4">
-                    <p class="mb-0 small text-uppercase fw-bold text-warning">Local Tip</p>
-                    <p class="small mb-0">Take the "Executive Class" or "Premiere" buses for air-conditioning and non-stop travel options.</p>
+                <div class="bg-dark p-3 rounded border-start border-warning border-4 shadow-sm mt-auto mb-4 text-start">
+                    <p class="mb-1 small text-uppercase fw-bold text-warning">Local Tip</p>
+                    <p class="small mb-0 text-white">Book "Executive Class" or "Premiere" buses for air-conditioning and non-stop travel convenience.</p>
                 </div>
             </div>
         </div>
 
-        <footer class="footer py-4 border-top-yellow text-center">
-            <p class="mb-2">Copyright © 2026 Provincial Government of Sultan Kudarat. All Rights Reserved.</p>
-            <a href="index.html" class="footer-home-link">Back to Home Page</a>
+        <footer class="footer">
+            <p class="mb-1">Copyright © 2026 Provincial Government of Sultan Kudarat. All Rights Reserved.</p>
+            <a href="index.html" style="color: white; text-decoration: underline !important;">Back to Home Page</a>
         </footer>
     </div>
 
