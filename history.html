@@ -3,29 +3,35 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>History & Origin - Sultan Kudarat</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="icon" type="image/jpeg" href="images/FL.jpeg">
-    <title>History and Origin</title>
 </head>
 <body class="sub-page">
 
-    <nav class="navbar navbar-expand-lg header fixed-top">
-        <div class="container-fluid px-4 branding-wrapper">
-            <div class="d-flex align-items-center">
-                <img src="images/SKOS.png" alt="logo" width="85" height="80">
-                <h1 class="header-h1 mb-0 ms-3">The Origin</h1>
+    <nav class="navbar navbar-expand-lg header p-0 fixed-top">
+        <div class="container-fluid px-4 py-2 branding-wrapper">
+            <div class="d-flex align-items-center gap-3">
+                <div class="header-brand">
+                    <img src="images/SKOS.png" alt="logo" width="80" height="80">
+                </div>
+                <div class="header-title-box d-none d-lg-block">
+                    <h1 class="header-h1 m-0">The Origin</h1>
+                </div>
+                <button class="navbar-toggler custom-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
             </div>
 
-            <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
-                <span class="hamburger-line"></span>
-                <span class="hamburger-line"></span>
-                <span class="hamburger-line"></span>
-            </button>
+            <div class="header-title-box w-100 text-center d-lg-none">
+                <h1 class="header-h1 m-0">The Origin</h1>
+            </div>
 
-            <div class="collapse navbar-collapse justify-content-end" id="mainNav">
-                <div class="navbar-nav gap-2 py-3 py-lg-0">
-                    
+            <div class="collapse navbar-collapse" id="mainNav">
+                <div class="nav d-flex flex-row align-items-center ms-auto gap-2">
                     <div class="dropdown">
                         <button class="button">Must-Have</button>
                         <div class="content">
@@ -35,7 +41,6 @@
                             <a href="language.html">Local Languages</a>
                         </div>
                     </div>
-
                     <div class="dropdown">
                         <button class="button">Municipalities</button>
                         <div class="content">
@@ -52,7 +57,6 @@
                             <a href="lutayan.html">Lutayan</a>
                         </div>
                     </div>
-
                     <div class="dropdown">
                         <button class="button">Traveler's Guide</button>
                         <div class="content">
@@ -60,55 +64,67 @@
                             <a href="food.html">Signature Flavors</a>
                             <a href="map.html">Spelunker’s Map</a>
                             <a href="cultural.html">Cultural Etiquette</a>
-                            <a href="contact.html">Contacts</a>
+                            <a href="contact.html">Emergency Contacts</a>
                         </div>
                     </div>
-
-                    <div class="home-btn-container">
-                        <a href="index.html" class="button nav-home-link">Home Page</a>
-                    </div>
+                    <a href="index.html" class="home-btn-link">Home</a>
                 </div>
             </div>
         </div>
     </nav>
 
-    <div class="header-spacer"></div>
+    <div class="main-wrapper">
+        <div class="header-spacer"></div>
 
-    <div class="container-fluid main-wrapper p-0">
-        <div class="row g-0 main-content-row">
+        <div class="bg-dark p-4 p-md-5 text-white border-bottom border-warning">
+            <h1 class="display-4 text-warning fw-bold">The Sultan’s Legacy</h1>
+            <p class="lead mb-0">Discover the warrior-king legacy and the birth of a province carved from history.</p>
+        </div>
+
+        <div class="row g-0 align-items-stretch main-content-row">
             
-            <div class="col-lg-9 main p-4 p-md-5">
-                <h1 class="display-4 mb-4">The Sultan’s Legacy</h1>
-                <div class="text-center mb-4">
-                    <img src="images/SK.jpeg" alt="Sultan Kudarat" class="img-fluid rounded border-yellow main-image">
-                </div>
-                <div class="content-text">
-                    <p>Sultan Kudarat was officially born on <strong>November 22, 1973</strong>, via Presidential Decree No. 341. It was carved from the <strong>"Empire Province of Cotabato"</strong> to create a distinct identity for the region.</p>
-                    <p>The province is named after <strong>Sultan Muhammad Dipatuan Kudarat</strong>, a 17th-century hero who united Mindanao and successfully defended the archipelago against Spanish colonization for over 50 years.</p>
-                    <p>It is a province named after a warrior-king, representing a legacy of sovereignty and unyielding courage. It represents the triumph of local resistance against foreign rule, serving as a permanent monument to the bravery of the Sultanate.</p>
+            <div class="col-lg-9 bg-card-area border-end border-warning border-3">
+                <div class="content-card">
+                    <div class="text-center mb-5">
+                        <img src="images/SK.jpeg" alt="Sultan Kudarat monument" class="img-fluid rounded border border-warning border-3 shadow-lg" style="max-height: 500px;">
+                    </div>
+                    <div class="content-text fs-5">
+                        <p>Sultan Kudarat was officially born on <strong>November 22, 1973</strong>, via Presidential Decree No. 341. It was carved from the <strong>"Empire Province of Cotabato"</strong> to create a distinct identity for the region and its people.</p>
+                        
+                        <hr class="my-4 border-warning">
+
+                        <p>The province is named after <strong>Sultan Muhammad Dipatuan Kudarat</strong>, a 17th-century hero who united Mindanao and successfully defended the archipelago against Spanish colonization for over 50 years.</p>
+                        
+                        <hr class="my-4 border-warning">
+
+                        <p>It is a province named after a warrior-king, representing a legacy of sovereignty and unyielding courage. It stands as a permanent monument to the triumph of local resistance against foreign rule, serving as a testament to the bravery of the Sultanate.</p>
+                    </div>
                 </div>
             </div>
 
-            <div class="col-lg-3 sidebar p-4">
-                <h3 class="border-bottom border-white pb-2 mb-4">Quick Info</h3>
-                <div class="info-item mb-4">
-                    <p class="mb-0 small text-uppercase fw-bold text-warning">Founded</p>
-                    <p>Nov 22, 1973</p>
+            <div class="col-lg-3 sidebar d-flex flex-column justify-content-center px-4 text-center">
+                <h3 class="text-warning mb-4">Quick Info</h3>
+                
+                <div class="mb-4">
+                    <p class="mb-1 small text-uppercase fw-bold text-white">Founded</p>
+                    <p class="fs-5">Nov 22, 1973</p>
                 </div>
-                <div class="info-item mb-4">
-                    <p class="mb-0 small text-uppercase fw-bold text-warning">Named After</p>
-                    <p>Sultan Muhammad Kudarat</p>
+                
+                <div class="mb-4">
+                    <p class="mb-1 small text-uppercase fw-bold text-white">Named After</p>
+                    <p class="fs-5">Sultan Muhammad Kudarat</p>
                 </div>
-                <div class="info-item">
-                    <p class="mb-0 small text-uppercase fw-bold text-warning">Key Event</p>
-                    <p>Kalimudan Festival (Anniversary)</p>
+
+                <div class="bg-dark p-3 rounded border border-warning shadow-sm">
+                    <p class="mb-1 small text-uppercase fw-bold text-warning">Key Event</p>
+                    <p class="small mb-0 text-white">Kalimudan Festival (Anniversary)</p>
                 </div>
             </div>
         </div>
 
-        <footer class="footer py-4 border-top-yellow text-center">
-            <p class="mb-2">Copyright © 2026 Provincial Government of Sultan Kudarat. All Rights Reserved.</p>
-            <a href="index.html" class="footer-home-link">Back to Home Page</a>
+        <footer class="footer">
+            <p class="mb-1">Copyright © 2026 Provincial Government of Sultan Kudarat. All Rights Reserved.</p>
+            <a href="index.html" style="color: white; text-decoration: underline !important;">Back to Home Page</a>
         </footer>
     </div>
 
