@@ -3,28 +3,35 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Spelunker's Map - Sultan Kudarat</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="icon" type="image/jpeg" href="images/FL.jpeg">
-    <title>Spelunker's Map - Face Your Fear</title>
 </head>
 <body class="sub-page1">
 
-    <nav class="navbar navbar-expand-lg header fixed-top">
-        <div class="container-fluid px-4 branding-wrapper">
-            <div class="d-flex align-items-center">
-                <img src="images/SKOS.png" alt="logo" width="85" height="80">
-                <h1 class="header-h1 mb-0 ms-3">Face it</h1>
+    <nav class="navbar navbar-expand-lg header p-0 fixed-top">
+        <div class="container-fluid px-4 py-2 branding-wrapper">
+            <div class="d-flex align-items-center gap-3">
+                <div class="header-brand">
+                    <img src="images/SKOS.png" alt="logo" width="80" height="80">
+                </div>
+                <div class="header-title-box d-none d-lg-block">
+                    <h1 class="header-h1 m-0">Map of Sultan Kudarat</h1>
+                </div>
+                <button class="navbar-toggler custom-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
             </div>
 
-            <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
-                <span class="hamburger-line"></span>
-                <span class="hamburger-line"></span>
-                <span class="hamburger-line"></span>
-            </button>
+            <div class="header-title-box w-100 text-center d-lg-none">
+                <h1 class="header-h1 m-0">Map of Sultan Kudarat</h1>
+            </div>
 
-            <div class="collapse navbar-collapse justify-content-end" id="mainNav">
-                <div class="navbar-nav gap-2 py-3 py-lg-0">
+            <div class="collapse navbar-collapse" id="mainNav">
+                <div class="nav d-flex flex-row align-items-center ms-auto gap-2">
                     <div class="dropdown">
                         <button class="button">Must-Have</button>
                         <div class="content">
@@ -57,84 +64,79 @@
                             <a href="food.html">Signature Flavors</a>
                             <a href="map.html">Spelunker’s Map</a>
                             <a href="cultural.html">Cultural Etiquette</a>
-                            <a href="contact.html">Contacts</a>
+                            <a href="contact.html">Emergency Contacts</a>
                         </div>
                     </div>
                     <div class="home-btn-container">
-                        <a href="index.html" class="button nav-home-link">Home Page</a>
+                        <a href="index.html" class="dropdown button" style="background-color: #f3e731; color: #283b64 !important; width: 120px;">Home</a>
                     </div>
                 </div>
             </div>
         </div>
     </nav>
 
-    <div class="header-spacer"></div>
+    <div class="main-wrapper">
+        <div class="header-spacer"></div>
 
-    <div class="container-fluid main-wrapper p-0 d-flex flex-column min-vh-100">
-        
-        <div class="row g-0 flex-grow-1">
-            <div class="col-lg-9 main p-4 p-md-5">
-                <h1 class="display-4 mb-4 text-warning">Spelunker's Map</h1>
-                <p class="lead mb-4">Beneath the surface of Sultan Kudarat lies a massive network of limestone caves. For centuries, these caves served as sacred burial grounds for the indigenous <strong>Kulaman Manobo</strong>. Today, they are world-class destinations for adventure seekers.</p>
-                
-                <div class="bg-dark p-3 rounded mb-5 border-start border-warning border-4">
-                    <p class="mb-0"><strong>Safety First:</strong> Specialized guides are strictly required for all entries. This ensures the safety of travelers and the preservation of the fragile cave ecosystems.</p>
-                </div>
+        <div class="bg-dark p-4 p-md-5 text-white border-bottom border-warning">
+            <h1 class="display-4 text-warning fw-bold">Spelunker's Map</h1>
+            <p class="lead mb-0">Beneath the surface of Sultan Kudarat lies a massive network of limestone caves, sacred burial grounds, and world-class adventure.</p>
+        </div>
 
-                <div class="row g-4">
-                    <div class="col-md-4">
-                        <div class="cave-card h-100 p-3 bg-opacity-10 bg-light rounded">
-                            <h3 class="text-warning border-bottom border-warning pb-2">Tenobac Cave</h3>
-                            <img src="images/teno.webp" alt="Tenobac Cave" class="img-fluid rounded border-yellow my-3">
-                            <p>An underground river cave where you can swim through ancient rock formations and witness the power of water erosion over millennia.</p>
+        <div class="row g-0 align-items-stretch main-content-row">
+            <div class="col-lg-9 border-end-custom">
+                <div class="row g-0 h-100">
+                    <div class="col-md-4 op-box position-relative border-end border-warning">
+                        <img src="images/teno.webp" class="w-100 h-100 object-fit-cover" alt="Tenobac">
+                        <div class="op-overlay">
+                            <h1>Tenobac Cave</h1>
+                            <h2>The Underground River</h2>
+                            <p>Swim through ancient rock formations and witness millennia of water erosion.</p>
                         </div>
                     </div>
-
-                    <div class="col-md-4">
-                        <div class="cave-card h-100 p-3 bg-opacity-10 bg-light rounded">
-                            <h3 class="text-warning border-bottom border-warning pb-2">Pitot Cave</h3>
-                            <img src="images/pitot.jpg" alt="Pitot Cave" class="img-fluid rounded border-yellow my-3">
-                            <p>Known for its tight squeezes and impressive stalactites. This cave offers a more technical challenge for experienced spelunkers.</p>
+                    <div class="col-md-4 op-box position-relative border-end border-warning">
+                        <img src="images/pitot.jpg" class="w-100 h-100 object-fit-cover" alt="Pitot">
+                        <div class="op-overlay">
+                            <h1>Pitot Cave</h1>
+                            <h2>The Technical Challenge</h2>
+                            <p>Known for tight squeezes and impressive stalactites. For experienced spelunkers.</p>
                         </div>
                     </div>
-
-                    <div class="col-md-4">
-                        <div class="cave-card h-100 p-3 bg-opacity-10 bg-light rounded">
-                            <h3 class="text-warning border-bottom border-warning pb-2">Gregory Cave</h3>
-                            <img src="images/greg.webp" alt="Gregory Cave" class="img-fluid rounded border-yellow my-3">
-                            <p>A large, cathedral-like cave system. With wide chambers and stable footing, it is perfect for beginner spelunkers and photographers.</p>
+                    <div class="col-md-4 op-box position-relative">
+                        <img src="images/greg.webp" class="w-100 h-100 object-fit-cover" alt="Gregory">
+                        <div class="op-overlay">
+                            <h1>Gregory Cave</h1>
+                            <h2>The Cathedral Dome</h2>
+                            <p>Wide chambers and stable footing, perfect for beginners and photographers.</p>
                         </div>
                     </div>
                 </div>
             </div>
-            
-            <div class="col-lg-3 sidebar p-4">
-                <h3 class="mb-4">Quick Info</h3>
-                
+
+            <div class="col-lg-3 sidebar d-flex flex-column justify-content-center px-4">
+                <h3 class="text-warning mb-4">Quick Info</h3>
                 <div class="mb-4">
-                    <p class="mb-0 small text-uppercase fw-bold text-warning">Required Gear</p>
+                    <p class="mb-1 small text-uppercase fw-bold">Required Gear</p>
                     <ul class="list-unstyled">
                         <li>• Helmet & Headlamp</li>
                         <li>• Dry bag</li>
                         <li>• Proper Footwear</li>
                     </ul>
                 </div>
-                
                 <div class="mb-4">
-                    <p class="mb-0 small text-uppercase fw-bold text-warning">Difficulty</p>
-                    <p>Ranges from <strong>Easy</strong> to <strong>Extreme</strong> depending on the cave system chosen.</p>
+                    <p class="mb-1 small text-uppercase fw-bold">Difficulty</p>
+                    <p>Ranges from <strong>Easy</strong> to <strong>Extreme</strong>.</p>
                 </div>
-
                 <div class="bg-dark p-3 rounded border border-warning">
-                    <p class="mb-0 small text-uppercase fw-bold text-warning">Best Time to Visit</p>
-                    <p class="small mb-0"><strong>March to May</strong> (Dry Season). Spelunking is restricted during heavy rains to avoid flash floods.</p>
+                    <p class="mb-1 small text-uppercase fw-bold text-warning">Best Time</p>
+                    <p class="small mb-0"><strong>March to May</strong> (Dry Season).</p>
                 </div>
             </div>
         </div>
 
-        <footer class="footer py-4 border-top-yellow text-center">
-            <p class="mb-2">Copyright © 2026 Provincial Government of Sultan Kudarat. All Rights Reserved.</p>
-            <a href="index.html" class="footer-home-link">Back to Home Page</a>
+        <footer class="footer">
+            <p class="mb-1">Copyright © 2026 Provincial Government of Sultan Kudarat. All Rights Reserved.</p>
+            <a href="index.html" style="color: white; text-decoration: underline !important;">Home Page</a>
         </footer>
     </div>
 
