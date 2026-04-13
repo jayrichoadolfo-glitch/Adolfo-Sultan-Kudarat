@@ -3,28 +3,35 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kalamansig - The White Sands</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="icon" type="image/jpeg" href="images/FL.jpeg">
-    <title>Kalamansig - The White Sands</title>
 </head>
 <body class="sub-page">
 
-    <nav class="navbar navbar-expand-lg header fixed-top">
-        <div class="container-fluid px-4 branding-wrapper">
-            <div class="d-flex align-items-center">
-                <img src="images/SKOS.png" alt="logo" width="85" height="80">
-                <h1 class="header-h1 mb-0 ms-3">Welcome</h1>
+    <nav class="navbar navbar-expand-lg header p-0 fixed-top">
+        <div class="container-fluid px-4 py-2 branding-wrapper">
+            <div class="d-flex align-items-center gap-3">
+                <div class="header-brand">
+                    <img src="images/SKOS.png" alt="logo" width="80" height="80">
+                </div>
+                <div class="header-title-box d-none d-lg-block">
+                    <h1 class="header-h1 m-0">Welcome</h1>
+                </div>
+                <button class="navbar-toggler custom-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
             </div>
 
-            <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
-                <span class="hamburger-line"></span>
-                <span class="hamburger-line"></span>
-                <span class="hamburger-line"></span>
-            </button>
+            <div class="header-title-box w-100 text-center d-lg-none">
+                <h1 class="header-h1 m-0">Welcome</h1>
+            </div>
 
-            <div class="collapse navbar-collapse justify-content-end" id="mainNav">
-                <div class="navbar-nav gap-2 py-3 py-lg-0">
+            <div class="collapse navbar-collapse" id="mainNav">
+                <div class="nav d-flex flex-row align-items-center ms-auto gap-2">
                     <div class="dropdown">
                         <button class="button">Must-Have</button>
                         <div class="content">
@@ -57,59 +64,73 @@
                             <a href="food.html">Signature Flavors</a>
                             <a href="map.html">Spelunker’s Map</a>
                             <a href="cultural.html">Cultural Etiquette</a>
-                            <a href="contact.html">Contacts</a>
+                            <a href="contact.html">Emergency Contacts</a>
                         </div>
                     </div>
-                    <div class="home-btn-container">
-                        <a href="index.html" class="button nav-home-link">Home Page</a>
-                    </div>
+                    <a href="index.html" class="home-btn-link">Home</a>
                 </div>
             </div>
         </div>
     </nav>
 
-    <div class="header-spacer"></div>
+    <div class="main-wrapper">
+        <div class="header-spacer"></div>
 
-    <div class="container-fluid main-wrapper p-0 d-flex flex-column min-vh-100">
-        
-        <div class="row g-0 flex-grow-1">
-            <div class="col-lg-9 main p-4 p-md-5">
-                <h1 class="display-4 mb-4">Kalamansig: The White Sands</h1>
-                
-                <img src="images/kalamansig.jpeg" alt="Kalamansig Beach" class="img-fluid rounded border-yellow mb-4">
-                
-                <p>The province’s premier beach destination. <strong>Poral Beach</strong> and <strong>Balot Island</strong> offer crystal-clear turquoise waters and white sand that rival the most famous islands in the country. It is famous for its limestone rock formations.</p>
-                
-                <h3 class="mt-4 mb-3">Background</h3>
-                <p>Named after a legendary giant or a sour fruit (<strong>Kalamansi</strong>), depending on which local you ask. It has transformed from a quiet fishing village into the province's premier summer getaway.</p>
-                
-                <h3 class="mt-4 mb-3">The Vibe</h3>
-                <p>Known for Poral Beach, it offers a <strong>"hidden paradise"</strong> feel with its limestone cliffs and crystal-clear waters that rival the more famous spots in the north. It is the perfect place for those seeking sun, sand, and solitude.</p>
-            </div>
+        <div class="bg-dark p-4 p-md-5 text-white border-bottom border-warning">
+            <h1 class="display-4 text-warning fw-bold">Kalamansig: The White Sands</h1>
+            <p class="lead mb-0">Experience crystal-clear turquoise waters and the province’s premier beach destinations.</p>
+        </div>
+
+        <div class="row g-0 align-items-stretch main-content-row">
             
-            <div class="col-lg-3 sidebar p-4">
-                <h3 class="mb-4">Quick Info</h3>
+            <div class="col-lg-9 bg-card-area border-end border-warning border-3">
+                <div class="content-card">
+                    <div class="text-center mb-5">
+                        <img src="images/kalamansig.jpeg" alt="Kalamansig Beach" class="img-fluid rounded border border-warning border-3 shadow-lg">
+                    </div>
+                    
+                    <div class="content-text fs-5">
+                        <h3 class="text-warning mb-3">A Coastal Paradise</h3>
+                        <p><strong>Poral Beach</strong> and <strong>Balot Island</strong> offer crystal-clear turquoise waters and white sand that rival the most famous islands in the country. The area is also well-known for its striking limestone rock formations that frame the shoreline.</p>
+                        
+                        <hr class="my-4 border-warning">
+
+                        <h3 class="text-warning mb-3">Background</h3>
+                        <p>Named after a legendary giant or a sour fruit (<strong>Kalamansi</strong>), depending on which local you ask, Kalamansig has transformed from a quiet fishing village into the province's premier summer getaway.</p>
+                        
+                        <hr class="my-4 border-warning">
+
+                        <h3 class="text-warning mb-3">The Vibe</h3>
+                        <p>Known for its <strong>"hidden paradise"</strong> feel, Kalamansig offers limestone cliffs and pristine waters for those seeking sun, sand, and solitude away from the crowded tourist trails of the north.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 sidebar d-flex flex-column justify-content-start px-4 pt-5 text-center">
+                <h3 class="text-warning mb-4">Quick Info</h3>
                 
-                <img src="images/balot.jpeg" alt="Balot Island" class="img-fluid rounded border-yellow mb-3 sidebar-img">
+                <img src="images/balot.jpeg" alt="Balot Island" class="img-fluid rounded border border-warning mb-4 shadow-sm">
+
+                <div class="mb-4">
+                    <p class="mb-1 small text-uppercase fw-bold text-white">Highlight</p>
+                    <p class="fs-6">Poral Beach & Balot Island</p>
+                </div>
                 
                 <div class="mb-4">
-                    <p class="mb-0 small text-uppercase fw-bold text-warning">Highlight</p>
-                    <p>Poral Beach & Balot Island.</p>
+                    <p class="mb-1 small text-uppercase fw-bold text-white">Activity</p>
+                    <p class="fs-6">Island Hopping & Snorkeling</p>
                 </div>
-                <div class="mb-4">
-                    <p class="mb-0 small text-uppercase fw-bold text-warning">Activity</p>
-                    <p>Island Hopping & Snorkeling.</p>
-                </div>
-                <div>
-                    <p class="mb-0 small text-uppercase fw-bold text-warning">Boat Rates</p>
-                    <p>₱1,500 – ₱3,500 (group).</p>
+
+                <div class="bg-dark p-3 rounded border border-warning shadow-sm mt-auto mb-4">
+                    <p class="mb-1 small text-uppercase fw-bold text-warning">Boat Rates</p>
+                    <p class="small mb-0 text-white">₱1,500 – ₱3,500 (group)</p>
                 </div>
             </div>
         </div>
 
-        <footer class="footer py-4 border-top-yellow text-center">
-            <p class="mb-2">Copyright © 2026 Provincial Government of Sultan Kudarat. All Rights Reserved.</p>
-            <a href="index.html" class="footer-home-link">Back to Home Page</a>
+        <footer class="footer">
+            <p class="mb-1">Copyright © 2026 Provincial Government of Sultan Kudarat. All Rights Reserved.</p>
+            <a href="index.html" style="color: white; text-decoration: underline !important;">Back to Home Page</a>
         </footer>
     </div>
 
